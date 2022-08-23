@@ -25,8 +25,6 @@ divGallery.innerHTML = stringGallery;
 
 const instance = new SimpleLightbox('.gallery a');
 
-// divGallery.addEventListener('click', onDivGalleryClick);
-
 function onDivGalleryClick(event) {
   event.preventDefault();
   if (!event.target.classList.contains('gallery__image')) {
