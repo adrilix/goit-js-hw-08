@@ -23,7 +23,7 @@ const galleryImage = galleryItems.map(({ preview, original, description }) => {
 const stringGallery = galleryImage.join('');
 divGallery.innerHTML = stringGallery;
 
-const instance = new SimpleLightbox('.gallery a');
+const instance = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
 
 function onDivGalleryClick(event) {
   event.preventDefault();
