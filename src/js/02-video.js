@@ -14,4 +14,6 @@ player.on(
 );
 const getTimeMemory = localStorage.getItem(KEY_STORAGE);
 
-player.setCurrentTime(getTimeMemory);
+if (getTimeMemory !== null) {
+  player.setCurrentTime(getTimeMemory);
+}
