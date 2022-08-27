@@ -43,5 +43,3 @@ function onFormSubmit(event) {
   localStorage.removeItem(KEY_STORAGE);
   console.log(savedValue);
 }
-
-// console.log(getMeaning)
